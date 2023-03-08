@@ -6,6 +6,15 @@ paper FLAME: Taming Backdoors in Federated Learning is from https://www.usenix.o
 
 Please contact me if you have any difficulty to run the code in issue.
 
+# Results
+Here ASR indicates attack success rate also called backdoor success rate, and Acc indicates accuracy of the main tasks.
+|Dataset|Model|Attack|Defence|ASR|Acc|iid|
+|  ---- |  ----  |  ----  |  ----  |  ----  | ----  | ---- |
+|CIFAR-10|ResNet18|Badnet|No Defence|70.2|80.38|IID|
+|CIFAR-10|ResNet18|Badnet|FLAME|3.33|78.77|IID|
+|CIFAR-10|ResNet18|Badnet|No Defence|70.53|77.58|Non-IID|
+|CIFAR-10|ResNet18|Badnet|FLAME|7.22|76.04|Non-IID|
+
 ## Requirement
 
 Python=3.9
