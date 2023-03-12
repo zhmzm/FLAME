@@ -155,7 +155,7 @@ class LocalMaliciousUpdate(object):
                 num_goal_label = len(labels[labels==self.attack_goal])
                 counter = 0
                 for xx in range(len(images)):
-                    if labels[xx] != 0:
+                    if labels[xx] != self.attack_goal:
                         continue
                     labels[xx] = self.attack_label
                     # images[xx][:, 0:5, 0:5] = torch.max(images[xx])
