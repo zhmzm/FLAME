@@ -173,7 +173,10 @@ if __name__ == '__main__':
             w_updates = []
         m = max(int(args.frac * args.num_users), 1)
         idxs_users = np.random.choice(range(args.num_users), m, replace=False)
-        attack_number = int(args.malicious * m)
+        if val_acc_list[-1] > backdoor_begin_acc:
+            attack_number = int(args.malicious * m)
+        else:
+            attack_number = 0
         
         for num_turn, idx in enumerate(idxs_users):
             if attack_number > 0:
