@@ -67,6 +67,14 @@ def test_or_not(args, label):
             return False
         
 def add_trigger(args, image):
+        if args.trigger == 'dba':
+            pixel_max = 1
+            image[:,args.triggerY+0:args.triggerY+2,args.triggerX+0:args.triggerX+2] = pixel_max
+            image[:,args.triggerY+0:args.triggerY+2,args.triggerX+2:args.triggerX+5] = pixel_max
+            image[:,args.triggerY+2:args.triggerY+5,args.triggerX+0:args.triggerX+2] = pixel_max
+            image[:,args.triggerY+2:args.triggerY+5,args.triggerX+2:args.triggerX+5] = pixel_max
+            save_img(image)
+            return image
         if args.trigger == 'square':
             pixel_max = torch.max(image) if torch.max(image)>1 else 1
             
