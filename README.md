@@ -4,7 +4,7 @@ Unofficial implementation for paper FLAME: Taming Backdoors in Federated Learnin
 
 paper FLAME: Taming Backdoors in Federated Learning is from https://www.usenix.org/system/files/sec22-nguyen.pdf
 
-Please contact me if you have any difficulty running the code in issue.
+Please contact me if you have any difficulty running the code in Issues.
 
 # Results
 Here ASR indicates attack success rate also called backdoor success rate, and Acc indicates accuracy of the main tasks.
