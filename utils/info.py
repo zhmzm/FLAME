@@ -32,7 +32,7 @@ def information(args):
     info.append(f'    Aggregation Function: {args.defence}')
     if math.isclose(args.malicious, 0) == False:
         info.append(f'    Attack method: {args.attack}')
-        info.append(f'    Attack tau: {args.tau}')
+        # info.append(f'    Attack tau: {args.tau}')
         info.append(f'    Fraction of malicious agents: {args.malicious*100}%')
         info.append(f'    Poison Frac: {args.poison_frac}')
         info.append(f'    Backdoor From {args.attack_goal} to {args.attack_label}')
