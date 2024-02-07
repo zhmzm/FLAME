@@ -1,10 +1,15 @@
 # FLAME
 
-Unofficial implementation for paper FLAME: Taming Backdoors in Federated Learning, if there is any problem, please let me know.
+**Unofficial implementation** for paper FLAME: Taming Backdoors in Federated Learning, if there is any problem, please let me know.
 
 paper FLAME: Taming Backdoors in Federated Learning is from https://www.usenix.org/system/files/sec22-nguyen.pdf
 
 Please contact me if you have any difficulty running the code in Issues.
+
+# Backdoor in FL
+
+**Our recent paper "Backdoor Federated Learning by Poisoning Backdoor-critical Layers" has been accepted in ICLR'24, please refer to the [Github repo](https://github.com/zhmzm/Poisoning_Backdoor-critical_Layers_Attack).**
+
 
 # Results
 Here ASR indicates attack success rate also called backdoor success rate, and Acc indicates accuracy of the main tasks.
